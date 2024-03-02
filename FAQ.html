@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Confirmation Form</title>
+</head>
+<body>
+
+	<form action="#" method="post" onsubmit="sendConfirmation()">
+        <!-- Input field for a name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <!-- Input field for an email address -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+<script>
+    function sendConfirmation() {
+		Email.send({
+			Host : "smtp.gmail.com", 
+			Username : "simratbackupacc@gmail.com", 
+			Password : "sycc rwzl rzas yhql",
+			To : "simratsingh261@gmail.com",
+			From : "simratbackpacc@gmail.com", 
+			Subject : "This is the subject",
+			Body : "And this is the body" 
+		}).then(
+			message => alert(message) 
+		);
+		}
+</script>
+
+</body>
+</html>

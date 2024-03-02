@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <title>Flashwell | Gallery page</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/led.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .filter_links {
+            margin-top: 18px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filter_links ul {
+            position: relative;
+            overflow-x: auto;
+            list-style: none;
+            display: flex;
+            background: #1f1f1f;
+            border-radius: 12px;
+        }
+
+        .active_box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(0px);
+            z-index: 1;
+            width: 120px;
+            height: 100%;
+            background: #2e7eed;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .filter_links ul li {
+            width: 120px;
+            z-index: 2;
+            text-align: center;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            padding: 8px 0px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+        .filter_image_container {
+            margin-top: 12px;
+            padding-inline: 20px;
+            max-width: 100%;
+            column-count: 3;
+            column-gap: 0px;
+        }
+
+        .filter_image_container img {
+            transition: width 0.3s height 0.4s ease-out;
+            width: 100%;
+            padding: 4px;
+            border-radius: 12px;
+        }
+
+        .image_box {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.5s ease;
+        }
+
+        .hide_image {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .filter_links {
+                padding-block: 12px;
+                margin-top: 18px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .filter_image_container {
+                margin-top: 12px;
+                padding-inline: 20px;
+                max-width: 100%;
+                column-count: 2;
+                column-gap: 0px;
+            }
+
+            .active_box {
+                width: 70px;
+            }
+
+            .filter_links ul li {
+                width: 70px;
+                padding: 6px 0px;
+                color: #ffffff;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        @media screen and (max-width: 368px) {
+            .filter_image_container {
+                margin-top: 12px;
+                padding-inline: 20px;
+                max-width: 100%;
+                column-count: 1;
+                column-gap: 0px;
+            }
+
+            .filter_links {
+                padding-block: 12px;
+                margin-top: 18px;
+                width: 100%;
+                margin: 0 auto;
+            }
+			.main-nav .navbar-nav .nav-item.active .nav-link {
+				color: #2e7eed;
+			  }
+			  
+			  .main-nav .navbar-nav .nav-item.active .nav-link:before {
+				content: '';
+				background: #2e7eed;
+				width: 60%;
+				height: 2px;
+				position: absolute;
+				top: 0;
+				left: 20%;
+			  }
+			
+        }
+    </style>
+    <title>Filterable Image Gallery</title>
+</head>
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">--
+		<div class="container">
+		  <a class="navbar-brand" href="index.html"><img src="images/Flashwell logo.png" alt="logo"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ti-menu"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item dropdown @@index">
+				<a class="nav-link" href="index.html">Home</a>
+			  <li class="nav-item active">
+				<a class="nav-link" href="about.html">Gallery</a>
+			  </li>
+			  <li class="nav-item @@contact">
+				<a class="nav-link" href="contact.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	  
+    <!-- Filter links -->
+    <div class="filter_links">
+        <ul class="links">
+            <li class="active_box"></li>
+            <li class="link" data-filter="*">all</li>
+            <li class="link" data-filter="FL4">FL4</li>
+            <li class="link" data-filter="FL12">FL12</li>
+            <li class="link" data-filter="FL Pro">FL Pro</li>
+            <li class="link" data-filter="Software">Software</li>
+        </ul>
+    </div>
+
+    <!-- Image container -->
+    <div class="filter_image_container">
+        <!-- Your gallery images with data attributes -->
+        <!-- Make sure to replace image source URLs and data-image-type values accordingly -->
+        <img class="gallery_image" src="images/animation.gif" alt="1.jpg" data-image-type="['FL4']">
+        <img class="gallery_image" src="images/controllers.png" alt="2.jpg" data-image-type="['FL12']">
+        <!-- Add more image elements as needed -->
+    </div>
+	<footer class="bg-body-tertiary text-center"
+style="background-color: #2e7eed;">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+		  <!-- Section: Social media -->
+		  <section class="mb-0">
+			<!-- Facebook -->
+			<a
+			data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #3b5998;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-facebook"></i
+			></a>
+	  
+			<!-- Twitter
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #55acee;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-twitter"></i
+			></a>-->
+	  
+			<!-- youtube -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #bc0202;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-youtube"></i
+			></a>
+	  
+			<!-- Instagram -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #ac2bac;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-instagram"></i
+			></a>
+	  <!--
+			Linkedin
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #0082ca;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-linkedin"></i
+			></a> -->
+<!-- email -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #ca4700;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-email"></i
+			></a>
+		  </section>
+		  <!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+	  
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+		  © 2023 Copyright:
+		  <a class="text-body" href="https://flash-well.com/">Flash-well.com</a>
+		</div>
+		<!-- Copyright -->
+</footer>
+
+
+    <script>
+        const filterLinks = Array.from(document.querySelectorAll(".link"));
+        const allImages = Array.from(document.querySelectorAll(".gallery_image"));
+        const activeBox = document.querySelector(".active_box");
+        let windowWidth = 120;
+        window.addEventListener("resize", () => {
+            windowWidth = window.innerWidth > 768 ? 120 : 70;
+            console.log(windowWidth);
+        });
+
+        filterLinks.forEach((link, index) => {
+            link.addEventListener("click", () => {
+                console.log(getComputedStyle(link).width);
+                let activeBoxPosition =
+                    index * Number(getComputedStyle(link).width.slice(0, -2));
+                activeBox.style.transform = `translateX(${activeBoxPosition}px)`;
+                activeBox.style.width = getComputedStyle(link).width;
+
+                filterImages(link.getAttribute("data-filter"));
+            });
+        });
+
+        function filterImages(imageFilterType) {
+            allImages.forEach((image) => {
+                let imageType = image.getAttribute("data-image-type");
+                if (!imageType.includes(imageFilterType) && imageFilterType !== "*") {
+                    image.classList.add("hide_image");
+                } else {
+                    image.classList.remove("hide_image");
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

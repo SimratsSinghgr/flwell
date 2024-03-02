@@ -1,0 +1,605 @@
+<!-- 
+THEME: Flashwell
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
+DEMO: https://demo.themefisher.com/small-apps/
+GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
+
+Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Flashwell | Home page</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/led.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src = "https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/Flashwell logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown active">
+          <a class="nav-link" href="#">Home</a>
+        <li class="nav-item @@about">
+          <a class="nav-link" href="about.html">Gallery</a>
+        </li>
+        <li class="nav-item @@contact">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--====================================
+=            Hero Section            =
+=====================================-->
+<section class="section gradient-banner">
+	<div class="shapes-container">
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+		<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
+		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
+		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+		<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
+		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
+	</div>
+	<div class="container" style="caret-color: transparent;">
+		<div class="row align-items-center">
+			<div class="col-md-6 order-2 order-md-1 text-center text-md-left" >
+				<h1 class="text-white font-weight-bold mb-4">Flashwell LED Controllers</h1>
+				<p class="text-white mb-5">Elevate Your Spaces with Refined Control, Using Your Unique Elegance and our Application Support.</p>
+				<label for="modal-trigger"id="open-modal-btn" class="btn btn-main-md">Download Software</label>
+  				<input type="checkbox" id="modal-trigger">
+  				<!-- Modal overlay -->
+  				<div id="modal-overlay" style="caret-color: black; ">
+  				  <!-- Modal container -->
+  				  <div id="modal-container" style="background-image:radial-gradient( skyblue, white);">
+  				    <!-- Close button -->
+  				    <label for="modal-trigger" id="modal-close" class="btn" style="text-align: right; padding-left: 300px;">×</label><br>
+  				    <!-- Form -->
+  				    
+  				      <b><label for="name" style="color: black;">Name:</label><br></b>
+  				      <input type="text" id="sendername" style="border: none;" required ><br>
+					
+  				      <b><label for="phone" style="color: black;">Phone Number:</label><br></b>
+  				      <input type="tel" id="subject" style="border: none;"><br>
+					<b><label for="ctype" style="color: black;">Please select the type of controller from below</label><br></b>
+					<input type="checkbox" value="FL" id="flashwell"/><label style="color: black;">FL 4 &nbsp; FL 12</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="FL PRO" id="flashwellpro"/><label style="color: black;">FL Pro</label><br>
+					
+  				      <b><label for="email" style="color: black;">Email:</label><br></b>
+  				      <input type="email" id="to" style="border: none;"><br>
+					
+  				      <button type="submit" style="background-color: #2e7eed; color:white" onclick="sendMail();">Submit</button>
+					  <input type="reset" value = "Reset" onclick="clearfield()" style="color: black;">
+  				    
+  				  </div>
+  				</div>
+			</div>
+			<div class="col-md-6 order-1 order-md-2" >
+				<div class="w3-container w3-center w3-animate-opacity">
+				<img class="img-fluid" src="images/led home.png" alt="screenshot"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Hero Section  ====-->
+
+<section class="section pt-0 position-relative pull-top">
+	<div class="container">
+		<div class="rounded shadow p-5 bg-white">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+					<i class="ti-comments-smiley text-primary h1"></i>
+					<h3 class="mt-4 text-capitalize h5 ">Easy to Use</h3>
+					<p class="regular text-muted">The software and the controller is super easy to use. We also provide youtube tutorial 
+						for the same.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+					<i class="ti-light-bulb text-primary h1"></i>
+					<h3 class="mt-4 text-capitalize h5 ">Adjustable Brightness</h3>
+					<p class="regular text-muted">Every single LED in all the channels have adujustable brightness as based on
+						the users requiremnet and program.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+					<i class="ti-palette text-primary h1"></i>
+					<h3 class="mt-4 text-capitalize h5 ">Custimzable Design</h3>
+					<p class="regular text-muted">There are multiple numbers of channels giving the user creative freedom to
+						design, innovate and try new patterns.
+					</p>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--==================================
+=            Feature Grid            =
+===================================-->
+<section class="feature section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 ml-auto justify-content-center">
+				<!-- Feature Mockup -->
+				<div class="image-content" data-aos="fade-right">
+					<img class="img-fluid" src="images/controllers.png" alt="controllers">
+				</div>
+			</div>
+			<div class="col-lg-6 mr-auto align-self-center">
+				<div class="feature-content">
+					<!-- Feature Title -->
+					<h2>Explore the field of LED Art with <a
+							href="index.html">Flashwell</a></h2>
+					<!-- Feature Description -->
+					<p class="desc">We here at Flashwell focus on providing you with the utmost quality LED controllers that dont only
+						allow you to customize LED patterns but also gives you the freedom to save all the patterns you create in you local
+						 pc. We also have our proprietary software that makes designing super easy and quick.
+					</p>
+				</div>
+				<!-- Testimonial Quote -->
+				<div class="testimonial">
+					<p>
+						"A good business is where you can solve problems; a great business is where you can help your customer solve problems effortlessly."
+					</p>
+					<ul class="list-inline meta">
+						<li class="list-inline-item">
+							<img src="images/simrat photo.png" alt="">
+						</li>
+						<li class="list-inline-item">Simrat Singh, CEO</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="feature section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 ml-auto align-self-center">
+				<div class="feature-content">
+					<!-- Feature Title -->
+					<h2>Explore your own creativity with <a
+							href="index.html">Flashwell</a></h2>
+					<!-- Feature Description -->
+					<p>This cutting-edge tool seamlessly combines our technology with your creativity. Whether you're an artist,
+					  decorator, DIY enthusiast, or even just a student, Flashwell empowers you to illuminate your imagination. 
+					  With a user-friendly interface and customizable features, this product is your gateway to crafting 
+					  mesmerizing designs. Elevate your space, events, or art projects with dynamic lighting that adapts 
+					  to your vision. </p>
+				</div>
+			</div>
+			<div class="col-lg-6 mr-auto justify-content-center">
+				<!-- Feature mockup -->
+				<div class="image-content" data-aos="fade-left">
+					<img class="img-fluid" src="images/animation.gif" alt="ipad" style="border-radius:15px" >
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Feature Grid  ====-->
+
+<!--==============================
+=            Services            =
+===============================-->
+<section class="service section bg-gray">
+	<div class="container-fluid p-0">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h2>An Interface For Everyone</h2>
+					<p>Softwares which give you the freedom to explore your own creativity </p>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col-lg-6 align-self-center">
+				<!-- Feature Image -->
+				<div class="service-thumb left ml-2" data-aos="fade-right">
+					<img class="img-fluid" src="images/software.png" alt="iphone-ipad">
+				</div>
+			</div>
+			<div class="col-lg-5 mr-auto align-self-center">
+				<div class="service-box">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-xs-12">
+							<!-- Service 01 -->
+							<div class="service-item">
+								<!-- Icon -->
+								<i class="ti-import"></i>
+								<!-- Heading -->
+								<h3>Easy to Save</h3>
+								<!-- Description -->
+								<p>You can save every LED pattern you design and keep it with modify whenever you like</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<!-- Service 01 -->
+							<div class="service-item">
+								<!-- Icon -->
+								<i class="ti-money"></i>
+								<!-- Heading -->
+								<h3>Free for all</h3>
+								<!-- Description -->
+								<p>Our software is free for all and all you need to do to download it is to go on top and lick on download now</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<!-- Service 01 -->
+							<div class="service-item">
+								<!-- Icon -->
+								<i class="ti-bar-chart"></i>
+								<!-- Heading -->
+								<h3>User Friendly</h3>
+								<!-- Description -->
+								<p>The software is user friendly and very easy to use. We also provide free youtube tutorials to help you understand it from scratch</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<!-- Service 01 -->
+							<div class="service-item">
+								<!-- Icon -->
+								<i class="ti-comment-alt"></i>
+								<!-- Heading -->
+								<h3>Responsive</h3>
+								<!-- Description -->
+								<p>Our software allows you to not only control the timings, steps , brightness and channels but also preview you design before exporting.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Services  ====-->
+
+
+<!--=================================
+=            Video Promo            =
+==================================-->
+<section class="video-promo section bg-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="content-block">
+					<!-- Heading -->
+					<h2>Watch Our Software tutorials here</h2>
+					<!-- Promotional Speech -->
+					<p>These will guide from the instalation of the software to making advance LED projects</p>
+					<!-- Popup Video -->
+					<a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
+						<i class="ti-control-play video"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Video Promo  ====-->
+
+<!--=================================
+=            Testimonial            =
+==================================-->
+<section class="section testimonial" id="testimonial">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Testimonial Slider -->
+				<div class="testimonial-slider owl-carousel owl-theme">
+					<!-- Testimonial 01 -->
+					<div class="item">
+						<div class="block shadow">
+							<!-- Speech -->
+							<p>
+								The LED controllers from Flashwell have truly transformed the ambiance of my space. 
+								The precision control and seamless functionality exceeded my expectations. The support team's 
+								quick response to my inquiries showcased their commitment to customer satisfaction. I'm now a 
+								loyal customer and highly recommend their products!
+							</p>
+							<!-- Person Thumb -->
+							<div class="image">
+								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
+							</div>
+							<!-- Name and Company -->
+							<cite>Abraham Linkon , Themefisher.com</cite>
+						</div>
+					</div>
+					<!-- Testimonial 01 -->
+					<div class="item">
+						<div class="block shadow">
+							<!-- Speech -->
+							<p>
+								Impressed with the sophistication of Flashwell's LED controllers. The refined mastery in crafting 
+								distinctive lighting environments is unparalleled. What sets them apart is not just the product 
+								quality but also the top-notch support. I had a minor issue, and their customer support resolved it 
+								swiftly. A brand that truly values its customers!
+							</p>
+							<!-- Person Thumb -->
+							<div class="image">
+								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
+							</div>
+							<!-- Name and Company -->
+							<cite>Abraham Linkon , Themefisher.com</cite>
+						</div>
+					</div>
+					<!-- Testimonial 01 -->
+					<div class="item">
+						<div class="block shadow">
+							<!-- Speech -->
+							<p>
+								Kudos to Flashwell for delivering a product that marries elegance with functionality. The LED 
+								controllers provided a level of control over my lighting that I didn't know was possible. The 
+								customer support team's expertise and willingness to assist made my experience seamless. I'm 
+								thrilled with my purchase and the exceptional service!
+							</p>
+							<!-- Person Thumb -->
+							<div class="image">
+								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
+							</div>
+							<!-- Name and Company -->
+							<cite>Abraham Linkon , Themefisher.com</cite>
+						</div>
+					</div>
+					<!-- Testimonial 01 -->
+					<div class="item">
+						<div class="block shadow">
+							<!-- Speech -->
+							<p>
+								The LED controllers from Flashwell are a game-changer. The ease of use and precision control 
+								have given me the flexibility to create diverse lighting moods effortlessly. What truly stands 
+								out is the continuous support. I had a technical query, and their support team not only resolved 
+								it promptly but also provided insightful tips. Highly recommended for anyone seeking top-notch 
+								LED controllers!
+							</p>
+							<!-- Person Thumb -->
+							<div class="image">
+								<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="image">
+							</div>
+							<!-- Name and Company -->
+							<cite>Abraham Linkon , Themefisher.com</cite>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Testimonial  ====-->
+<!--
+<section class="call-to-action-app section bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>It's time to change your mind</h2>
+				<p>Download over 2 million humans .Get <a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a> free forever!
+					<br>We say you won’t look back.</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-apple"></i>
+							Iphone
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-android"></i>
+							Android
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="ti-microsoft-alt"></i>
+							Windows
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+<!--============================
+=            Footer            =
+=============================-->
+<footer class="bg-body-tertiary text-center"
+style="background-color: #2e7eed;">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+		  <!-- Section: Social media -->
+		  <section class="mb-0">
+			<!-- Facebook -->
+			<a
+			data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #3b5998;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-facebook"></i
+			></a>
+	  
+			<!-- Twitter
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #55acee;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-twitter"></i
+			></a>-->
+	  
+			<!-- youtube -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #bc0202;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-youtube"></i
+			></a>
+	  
+			<!-- Instagram -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #ac2bac;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-instagram"></i
+			></a>
+	  <!--
+			Linkedin
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #0082ca;"
+			  href="#!"
+			  role="button"
+			  ><i class="ti-linkedin"></i
+			></a> -->
+<!-- email -->
+			<a
+			  data-mdb-ripple-init
+			  class="btn text-white btn-floating m-1"
+			  style="background-color: #ca4700;"
+			  href="mailto:someone@example.com""
+			  role="button"
+			  ><i class="ti-email"></i
+			></a>
+		  </section>
+		  <!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+	  
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+		  © 2023 Copyright:
+		  <a class="text-body" href="https://flash-well.com/">Flash-well.com</a>
+		</div>
+		<!-- Copyright -->
+</footer>
+
+
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+  
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function sendMail(){ 
+    (function(){
+    emailjs.init("r_wl5a-J3PRvU3gs6"); 
+    })();
+    
+    var params = {
+    sendername: document.querySelector("#sendername").value,    
+    to: document.querySelector("#to").value,
+	phone: document.querySelector("#subject").value,
+    };    
+	var button1 = document.getElementById("flashwell");
+	var button2 = document.getElementById("flashwellpro");
+    var serviceID = "service_jj4crmo";
+    var templateIDfl = "template_p3q234e";
+	var templateIDflpro="template_e20sqbj";
+	if(button1.checked){
+		emailjs.send(serviceID,templateIDfl,params)
+    .then( res => {
+        alert("Email sent");
+    })
+    .catch(error => {
+        console.error('select controller type');
+    });
+}
+	else{
+	
+
+    emailjs.send(serviceID,templateIDflpro,params)
+    .then( res => {
+        alert("Email sent");
+    })
+    .catch(error => {
+        console.error('Email sending error:', error);
+    });
+	}
+    }
+	function clearfield(){
+			document.getElementById("sendername").value = "";
+			document.getElementById("subject").value = "";
+			document.getElementById("to").value = "";
+	   }
+	
+</script>
+  
+</body>
+
+</html>
